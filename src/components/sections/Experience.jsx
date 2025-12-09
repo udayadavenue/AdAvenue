@@ -70,6 +70,19 @@ const Experience = () => {
             />
           ))}
         </VerticalTimeline>
+        <Desc
+          style={{
+            marginBottom: "40px",
+          }}
+        >
+        <Desc
+          style={{
+            marginBottom: "40px",marginTop: "20px",fontSize: "1.4rem",
+          }}
+        >
+        25+ Valued Clients and Counting.
+        </Desc>.
+        </Desc>
       </Wrapper>
     </Container>
   );

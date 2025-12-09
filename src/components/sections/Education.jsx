@@ -8,6 +8,8 @@ import EducationCard from "../cards/EducationCard";
 import EarthCanvas from "../canvas/Earth";
 
 const Container = styled.div`
+  // top-padding: 10.5rem;
+  margin-top: 2.5rem;
   display: flex;
   flex-direction: column;
   justify-contnet: center;

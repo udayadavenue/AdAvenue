@@ -136,14 +136,15 @@ const Contact = () => {
             marginBottom: "40px",
           }}
         >
-          Feel free to reach out to me for any questions or opportunities!
+          Feel free to reach out to Us for Quotations And Free Review Report for your Brand!
         </Desc>
         <ContactForm ref={form} onSubmit={handelSubmit}>
-          <ContactTitle>Email Me 🚀</ContactTitle>
-          <ContactInput placeholder="Your Email" name="from_email" />
-          <ContactInput placeholder="Your Name" name="from_name" />
-          <ContactInput placeholder="Your Phone Number" name="from_phone" />
-          <ContactInput placeholder="Subject" name="subject" />
+          <ContactTitle>Work With Us 🚀</ContactTitle>
+          <ContactInput placeholder="Email" name="from_email" />
+          <ContactInput placeholder="Name" name="from_name" />
+          <ContactInput placeholder="Brand Name" name="subject" />
+          <ContactInput placeholder="Phone Number" name="from_phone" />
+          
           <ContactInputMessage placeholder="Message" name="message" rows={4} />
           <ContactButton type="submit">Send</ContactButton>
         </ContactForm>

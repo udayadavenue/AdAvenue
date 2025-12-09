@@ -95,7 +95,7 @@ const Projects = () => {
   return (
     <Container id="Projects">
       <Wrapper>
-        <Title>Work</Title>
+        <Title>Portfolio</Title>
         <Desc
           style={{
             marginBottom: "40px",
@@ -143,6 +143,7 @@ const Projects = () => {
               <ProjectCard project={project} />
             ))}
         </CardContainer>
+        
       </Wrapper>
     </Container>
   );
