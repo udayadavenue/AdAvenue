@@ -2,7 +2,7 @@ import React, { Suspense } from "react";
 import styled, { ThemeProvider } from "styled-components";
 import { darkTheme } from "./utils/Themes";
 import Navbar from "./components/Navbar";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import StartCanvas from "./components/canvas/Stars";
 
 const Hero = React.lazy(() => import("./components/sections/Hero"));
@@ -40,7 +40,7 @@ const Wrapper = styled.div`
 function App() {
   return (
     <ThemeProvider theme={darkTheme}>
-      <BrowserRouter>
+      <HashRouter>
         <Navbar />
         <Body>
           <StartCanvas />
@@ -64,7 +64,7 @@ function App() {
 
           </div>
         </Body>
-      </BrowserRouter>
+      </HashRouter>
     </ThemeProvider>
   );
 }
