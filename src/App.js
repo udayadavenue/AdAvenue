@@ -40,7 +40,7 @@ const Wrapper = styled.div`
 function App() {
   return (
     <ThemeProvider theme={darkTheme}>
-      <HashRouter>
+      <HashRouter basename="/AdAvenue/">
         <Navbar />
         <Body>
           <StartCanvas />
