@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/adavenue/static/css/main.891ad7bb.css",
+    "main.js": "/adavenue/static/js/main.6b02821f.js",
+    "static/js/19.34b16013.chunk.js": "/adavenue/static/js/19.34b16013.chunk.js",
+    "static/js/110.4768e492.chunk.js": "/adavenue/static/js/110.4768e492.chunk.js",
+    "static/css/494.65f1bc6c.chunk.css": "/adavenue/static/css/494.65f1bc6c.chunk.css",
+    "static/js/494.4ec775dc.chunk.js": "/adavenue/static/js/494.4ec775dc.chunk.js",
+    "static/css/746.65f1bc6c.chunk.css": "/adavenue/static/css/746.65f1bc6c.chunk.css",
+    "static/js/746.8785f1f2.chunk.js": "/adavenue/static/js/746.8785f1f2.chunk.js",
+    "static/js/434.176df70c.chunk.js": "/adavenue/static/js/434.176df70c.chunk.js",
+    "static/js/583.c4bc631e.chunk.js": "/adavenue/static/js/583.c4bc631e.chunk.js",
+    "static/js/132.903e9489.chunk.js": "/adavenue/static/js/132.903e9489.chunk.js",
+    "static/js/380.f9628e48.chunk.js": "/adavenue/static/js/380.f9628e48.chunk.js",
+    "static/js/759.461a73ad.chunk.js": "/adavenue/static/js/759.461a73ad.chunk.js",
+    "static/js/777.81f866e2.chunk.js": "/adavenue/static/js/777.81f866e2.chunk.js",
+    "static/media/HeroImage.jpg": "/adavenue/static/media/HeroImage.9fb4e186ad355e8a3475.jpg",
+    "static/media/logo.jpg": "/adavenue/static/media/logo.9ac69dd441d9b64f5611.jpg",
+    "index.html": "/adavenue/index.html",
+    "main.891ad7bb.css.map": "/adavenue/static/css/main.891ad7bb.css.map",
+    "main.6b02821f.js.map": "/adavenue/static/js/main.6b02821f.js.map",
+    "19.34b16013.chunk.js.map": "/adavenue/static/js/19.34b16013.chunk.js.map",
+    "110.4768e492.chunk.js.map": "/adavenue/static/js/110.4768e492.chunk.js.map",
+    "494.65f1bc6c.chunk.css.map": "/adavenue/static/css/494.65f1bc6c.chunk.css.map",
+    "494.4ec775dc.chunk.js.map": "/adavenue/static/js/494.4ec775dc.chunk.js.map",
+    "746.65f1bc6c.chunk.css.map": "/adavenue/static/css/746.65f1bc6c.chunk.css.map",
+    "746.8785f1f2.chunk.js.map": "/adavenue/static/js/746.8785f1f2.chunk.js.map",
+    "434.176df70c.chunk.js.map": "/adavenue/static/js/434.176df70c.chunk.js.map",
+    "583.c4bc631e.chunk.js.map": "/adavenue/static/js/583.c4bc631e.chunk.js.map",
+    "132.903e9489.chunk.js.map": "/adavenue/static/js/132.903e9489.chunk.js.map",
+    "380.f9628e48.chunk.js.map": "/adavenue/static/js/380.f9628e48.chunk.js.map",
+    "759.461a73ad.chunk.js.map": "/adavenue/static/js/759.461a73ad.chunk.js.map",
+    "777.81f866e2.chunk.js.map": "/adavenue/static/js/777.81f866e2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.891ad7bb.css",
+    "static/js/main.6b02821f.js"
+  ]
+}
