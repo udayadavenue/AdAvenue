@@ -148,7 +148,7 @@ export const experiences = [
 export const education = [
   {
     id: 0,
-   img: "https://siyajhvxxsqcucrzfykf.supabase.co/storage/v1/object/public/Image-Avatar/ChatGPT%20Image%20Dec%208,%202025,%2011_56_00%20PM.png",
+   img: "https://siyajhvxxsqcucrzfykf.supabase.co/storage/v1/object/public/Image-Avatar/kishan.png",
     school: "Founder",
     date: "Founder: Kishan Mishra",
    // grade: "",
@@ -194,7 +194,7 @@ export const projects = [
     description:
       "Developed a full-stack web application that allows users to search for, play, and pause their favorite podcasts on demand and create podcasts. Implemented user authentication using Google Auth and Jwt Auth, made responsive user interface with React JS that provides users with a seamless experience across all devices. Practiced agile methodologies to optimize team efficiency and communication.",
     image:
-      "https://siyajhvxxsqcucrzfykf.supabase.co/storage/v1/object/public/Videos/02e18b4d8b9910d67229491578a4019b.mp4",
+      "https://siyajhvxxsqcucrzfykf.supabase.co/storage/v1/object/public/Videos/jankapuri.mp4",
     tags: ["React Js", "MongoDb", "Node Js", "Express Js", "Redux"],
     category: "web app",
     //github: "  ",
@@ -241,7 +241,7 @@ export const projects = [
     description:
       "Preprocessed and augmented the dataset to improve model accuracy, trained the model, created API using model and Python, and used React web app for the project's front end. Achievements: Achieved an accuracy of 99.2% to accurately detect brain tumors from medical images.",
     image:
-      "https://siyajhvxxsqcucrzfykf.supabase.co/storage/v1/object/public/Videos/14b46d984aece4ab0c45814d244877d3.mp4",
+      "https://siyajhvxxsqcucrzfykf.supabase.co/storage/v1/object/public/Videos/jankapuri.mp4",
     tags: ["Python", "Keras", "TensorFlow", "VGG16", "Pickle", "React"],
     category: "machine learning",
    // github: "  ",
