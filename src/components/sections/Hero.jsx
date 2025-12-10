@@ -74,7 +74,9 @@ const HeroRightContainer = styled.div`
   }
 
   @media (max-width: 640px) {
-    margin-bottom: 30px;
+    margin-bottom: 5px;
+    margin-top: 0px;
+    padding: 0px;
   }
 `;
 
