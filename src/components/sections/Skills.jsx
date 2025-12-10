@@ -119,7 +119,7 @@ const Skills = () => {
   return (
     <Container id="Skills">
       <Wrapper>
-        <Title>Service</Title>
+        <Title>Services</Title>
         <Desc
           style={{
             marginBottom: "40px",

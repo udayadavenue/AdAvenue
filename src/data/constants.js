@@ -7,7 +7,7 @@ export const Bio = {
   "Video Production",
 
  
-  "Business Promotion"
+  "Business Ads"
 ]
 ,
   //description:

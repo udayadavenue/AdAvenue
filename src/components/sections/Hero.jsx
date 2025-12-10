@@ -236,7 +236,7 @@ const Hero = () => {
                 <Title>
                 Building the Future with Performance Marketing and Digital Growth Excellence <br /> {Bio.name}
                 </Title>
-                <TextLoop>
+                <TextLoop style={{ marginTop: "3.0rem" }}>
                   Our Services
                   <Span>
                     <Typewriter
