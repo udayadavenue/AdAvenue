@@ -235,7 +235,7 @@ const Hero = () => {
           <HeroInnerContainer>
             <HeroLeftContainer>
               <motion.div {...headTextAnimation}>
-                <Title>
+                <Title className="hero-text-change">
                 Building the Future with Performance Marketing and Digital Growth Excellence <br /> {Bio.name}
                 </Title>
                 <TextLoop style={{ marginTop: "3.0rem" }} >
