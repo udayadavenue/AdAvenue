@@ -12,6 +12,8 @@ import {
   headTextAnimation,
 } from "../../utils/motion";
 import StarCanvas from "../canvas/Stars";
+import "../../components/css/Hero.css";
+
 
 
 const HeroContainer = styled.div`
@@ -236,9 +238,9 @@ const Hero = () => {
                 <Title>
                 Building the Future with Performance Marketing and Digital Growth Excellence <br /> {Bio.name}
                 </Title>
-                <TextLoop style={{ marginTop: "3.0rem" }}>
+                <TextLoop style={{ marginTop: "3.0rem" }} >
                   Our Services
-                  <Span>
+                  <Span className="font-change">
                     <Typewriter
                       options={{
                         strings: Bio.roles,
