@@ -21,7 +21,7 @@ const HeroContainer = styled.div`
   justify-content: center;
   position: relative;
   padding: 80px 30px;
-  z-index: 10000;
+  // z-index: 10000;
 
   
 

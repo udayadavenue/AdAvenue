@@ -13,9 +13,11 @@ const Nav = styled.div`
   font-size: 1rem;
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 1000;
   color: white;
 `;
+
+
 
 const NavbarContainer = styled.div`
   width: 100%;
@@ -114,16 +116,22 @@ const MobileMenu = styled.ul`
   width: 100%;
   display: flex;
   flex-direction: column;
+
+  z-index: 10000000;
+  font-size: 1.2rem;
   align-items: start;
   gap: 16px;
   padding: 0 6px;
   list-style: none;
   width: 100%;
-  padding: 12px 40px 24px 40px;
-  background: ${({ theme }) => theme.card_light + 99};
-  position: absolute;
+  padding: 12px 40px 24px 140px;
+  background: ${({ theme }) => theme.bg + 99};
+  // background: black;
+  // background: black:
+  position: fixed;
   top: 80px;
   right: 0;
+  
 
   transition: all 0.6s ease-in-out;
   transform: ${({ isOpen }) =>
@@ -157,7 +165,7 @@ const Navbar = () => {
         </NavItems>
 
         {isOpen && (
-          <MobileMenu isOpen={isOpen}>
+          <MobileMenu style={{zIndex:100000}} isOpen={isOpen}>
             <NavLink onClick={() => setIsOpen(!isOpen)} href="#About">
               About
             </NavLink>
