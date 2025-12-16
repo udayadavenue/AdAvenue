@@ -169,20 +169,20 @@ const Navbar = () => {
             <NavLink onClick={() => setIsOpen(!isOpen)} href="#About">
               About
             </NavLink>
-            <NavLink onClick={() => setIsOpen(!isOpen)} href="#Service">
+            <NavLink onClick={() => setIsOpen(!isOpen)} href="#Skills">
               Service
             </NavLink>
-            <NavLink onClick={() => setIsOpen(!isOpen)} href="#Clients">
+            <NavLink onClick={() => setIsOpen(!isOpen)} href="#Experience">
               Clients
             </NavLink>
             <NavLink onClick={() => setIsOpen(!isOpen)} href="#Projects">
               Projects
             </NavLink>
-            <NavLink onClick={() => setIsOpen(!isOpen)} href="#Developers">
-              Developers
+            <NavLink onClick={() => setIsOpen(!isOpen)} href="#Education">
+              Team
             </NavLink>
             <NavLink onClick={() => setIsOpen(!isOpen)} href="#Contact">
-              Contact Us
+              Contact
             </NavLink>
             
           </MobileMenu>
