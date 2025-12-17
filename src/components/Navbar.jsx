@@ -148,8 +148,8 @@ const Navbar = () => {
   return (
     <Nav>
       <NavbarContainer>
-        <NavLogo to="/">
-          <LogoImage src={logo}/> AdAvenue</NavLogo>
+        <NavLogo href="#About">
+          <LogoImage href="#About" src={logo}/> AdAvenue</NavLogo>
 
         <MobileIcon onClick={() => setIsOpen(!isOpen)}>
           <MenuRounded style={{ color: "inherit" }} />
