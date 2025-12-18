@@ -159,9 +159,9 @@ export const education = [
     id: 1,
    img: "https://siyajhvxxsqcucrzfykf.supabase.co/storage/v1/object/public/Image-Avatar/uday.png",
     school: "Chief Technology Officer (CTO)",
-    date: "CTO: Uday Narayan",
+    date: "CTO & Co-Founder: Uday Narayan",
    // grade: "",
-    desc: "As the CTO of Adavenue, Uday specializes in full-stack development (MERN), Java, cloud computing (AWS). He leads the company’s technical strategy, ensuring innovative and scalable solutions for clients. He is dedicated to driving technology excellence and client success.",
+    desc: "As the CTO and Co-Founder of Adavenue, Uday specializes in full-stack development (MERN), Java, cloud computing (AWS). He leads the company’s technical strategy, ensuring innovative and scalable solutions for clients. He is dedicated to driving technology excellence and client success.",
     //degree: "",
   },
   {
