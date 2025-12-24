@@ -1,159 +1,118 @@
 import React, { useRef, useEffect } from "react";
 import styled from "styled-components";
 
+/* -------- GLOBAL ACTIVE VIDEO -------- */
+let activeVideo = null;
+/* ----------------------------------- */
+
 const Card = styled.div`
   width: 330px;
   height: 490px;
   background-color: ${({ theme }) => theme.card};
-  cursor: pointer;
   border-radius: 10px;
   box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.4);
   overflow: hidden;
-  // padding: 26px 20px;
   display: flex;
   flex-direction: column;
-  // gap: 14px;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-in-out;
+
   &:hover {
     transform: translateY(-10px);
-    box-shadow: 0 0 50px 4px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.6);
     filter: brightness(1.1);
   }
 `;
+
 const Image = styled.img`
   width: 100%;
   height: 100%;
-  background-color: ${({ theme }) => theme.white};
-  border-radius: 10px;
-  box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.3);
+  object-fit: cover;
 `;
 
 const Video = styled.video`
   width: 100%;
   height: 100%;
-  background-color: ${({ theme }) => theme.white};
-  border-radius: 10px;
-  box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.3);
-`;
-const Tags = styled.div`
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 4px;
-`;
-const Details = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 0px;
-  padding: 0px 2px;
-`;
-const Title = styled.div`
-  font-size: 20px;
-  font-weight: 600;
-  color: ${({ theme }) => theme.text_secondary};
-  overflow: hidden;
-  display: -webkit-box;
-  max-width: 100%;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-`;
-const Date = styled.div`
-  font-size: 12px;
-  margin-left: 2px;
-  font-weight: 400;
-  color: ${({ theme }) => theme.text_secondary + 80};
-  @media only screen and (max-width: 768px) {
-    font-size: 10px;
-  }
-`;
-const Description = styled.div`
-  font-weight: 400;
-  color: ${({ theme }) => theme.text_secondary + 99};
-  overflow: hidden;
-  margin-top: 8px;
-  display: -webkit-box;
-  max-width: 100%;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  text-overflow: ellipsis;
-`;
-const Members = styled.div`
-  display: flex;
-  align-items: center;
-  padding-left: 10px;
-`;
-const Avatar = styled.img`
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  margin-left: -10px;
-  background-color: ${({ theme }) => theme.white};
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  border: 3px solid ${({ theme }) => theme.card};
-`;
-const Button = styled.a`
-  color: ${({ theme }) => theme.primary};
-  text-decoration: none;
-  font-weight: 600;
-  text-align: center;
+  object-fit: cover;
+  cursor: pointer;
 `;
 
 const ProjectCard = ({ project }) => {
   const videoRef = useRef(null);
-  const isVideo = project.image && (project.image.includes('.mp4') || project.image.includes('Videos/'));
 
-  useEffect(() => {
-    if (isVideo && videoRef.current) {
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              videoRef.current.play().catch(() => {
-                // Autoplay failed, user interaction required
-              });
-            } else {
-              videoRef.current.pause();
-            }
-          });
-        },
-        { threshold: 0.5 } // Play when 50% of the video is visible
-      );
+  const isVideo =
+    project.video ||
+    (project.image &&
+      (project.image.includes(".mp4") || project.image.includes("Videos/")));
 
-      observer.observe(videoRef.current);
-
-      return () => {
-        observer.disconnect();
-      };
+  /* -------- STOP OTHER VIDEOS -------- */
+  const stopOtherVideos = (current) => {
+    if (activeVideo && activeVideo !== current) {
+      activeVideo.pause();
+      activeVideo.muted = true;
     }
+    activeVideo = current;
+  };
+
+  /* -------- DESKTOP: HOVER PLAY WITH SOUND -------- */
+  const handleMouseEnter = () => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    stopOtherVideos(video);
+    video.muted = false;
+    video.play().catch(() => {});
+  };
+
+  const handleMouseLeave = () => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    video.pause();
+    video.muted = true;
+    if (activeVideo === video) activeVideo = null;
+  };
+
+  /* -------- MOBILE: SCROLL PLAY WITH SOUND -------- */
+  useEffect(() => {
+    if (!isVideo || !videoRef.current) return;
+
+    const video = videoRef.current;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          stopOtherVideos(video);
+          video.muted = false;
+          video.play().catch(() => {});
+        } else {
+          video.pause();
+          video.muted = true;
+          if (activeVideo === video) activeVideo = null;
+        }
+      },
+      { threshold: 0.7 }
+    );
+
+    observer.observe(video);
+    return () => observer.disconnect();
   }, [isVideo]);
 
   return (
     <Card>
       {isVideo ? (
-        <Video ref={videoRef} muted loop>
-          <source src={project.image} type="video/mp4" />
-          Your browser does not support the video tag.
+        <Video
+          ref={videoRef}
+          muted
+          preload="metadata"
+          playsInline
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >
+          <source src={project.video || project.image} type="video/mp4" />
         </Video>
       ) : (
-        <Image src={project.image} />
+        <Image src={project.image} alt={project.title} />
       )}
-      <Tags></Tags>
-      {/* <Details>
-        <Title>{project.title}</Title>
-        <Date>{project.date}</Date>
-        <Description>{project.description}</Description>
-      </Details> */}
-      <Members>
-        {project.member?.map((member) => (
-          <Avatar src={member.img} />
-        ))}
-      </Members>
-
     </Card>
   );
 };
