@@ -79,8 +79,8 @@ export const skills = [
 export const experiences = [
   {
     id: 0,
-    img: "https://siyajhvxxsqcucrzfykf.supabase.co/storage/v1/object/public/Image-Logo/4.jpg",
-    role: "Amyraa Jewels",
+    img: "https://siyajhvxxsqcucrzfykf.supabase.co/storage/v1/object/public/Image-Logo/araj.png",
+    role: "Araj Dry fruits and spices",
     company: "Agra",
     desc: " Amyraa Jewels is Agra’s trusted destination for premium handcrafted jewellery. Known for elegant designs, certified gemstones, and modern craftsmanship, Amyraa brings timeless beauty to every creation. From bridal collections to everyday luxury pieces, Amyraa Jewels blends tradition with contemporary style to offer jewellery that celebrates every occasion.",
    
@@ -88,8 +88,8 @@ export const experiences = [
   },
   {
     id: 1,
-    img: "https://siyajhvxxsqcucrzfykf.supabase.co/storage/v1/object/public/Image-Logo/6.jpg",
-    role: "Shri Dauji Mishthan Bhandar",
+    img: "https://siyajhvxxsqcucrzfykf.supabase.co/storage/v1/object/public/Image-Logo/ganpati.jpg",
+    role: "Shri Ganpati sweets",
     company: "Agra.",
     
     desc: "Shri Dauji Mishthan Bhandar is a renowned Agra-based sweets and snacks shop known for its authentic flavours, pure ingredients, and traditional preparation methods. With a legacy of serving classic Indian sweets, namkeen, and festive delicacies, the brand is celebrated for quality, freshness, and unmatched taste loved by generations.",
@@ -98,8 +98,8 @@ export const experiences = [
   },
   {
     id: 2,
-    img: "https://siyajhvxxsqcucrzfykf.supabase.co/storage/v1/object/public/Image-Logo/5.jpg",
-    role: "Sharda World School",
+    img: "https://siyajhvxxsqcucrzfykf.supabase.co/storage/v1/object/public/Image-Logo/mehar.jpg",
+    role: "Meher Makeovers",
     company: "Agra",
     
     desc: "Sharda World School, Agra, is a progressive educational institution dedicated to holistic learning, modern teaching methods, and character building. With world-class infrastructure, experienced faculty, and a focus on academics, sports, creativity, and life skills, the school nurtures confident, responsible, and future-ready students. ",
@@ -108,8 +108,8 @@ export const experiences = [
   },
   {
     id: 3,
-    img: "https://siyajhvxxsqcucrzfykf.supabase.co/storage/v1/object/public/Image-Logo/2.jpg",
-    role: "Sharda University",
+    img: "https://siyajhvxxsqcucrzfykf.supabase.co/storage/v1/object/public/Image-Logo/newings.jpg",
+    role: "NeWings Public school",
     company: "Agra",
    
     desc: "Sharda University, Agra, is an emerging centre of higher education known for academic excellence, research-driven learning, and global exposure. Offering diverse undergraduate and postgraduate programs, the university emphasizes industry-ready skills, innovation, and a student-centric environment that empowers learners to excel in their careers.",
@@ -118,8 +118,8 @@ export const experiences = [
   },
   {
     id: 4,
-    img: "https://siyajhvxxsqcucrzfykf.supabase.co/storage/v1/object/public/Image-Logo/1.jpg",
-    role: "Rajkumar & Sons ",
+    img: "https://siyajhvxxsqcucrzfykf.supabase.co/storage/v1/object/public/Image-Logo/nextnews.jpg",
+    role: "Next future news ",
     company: "Agra",
    
     desc: "Rajkumar & Sons is one of Agra’s distinguished family-owned businesses known for quality products, ethical values, and decades of customer trust. With a commitment to excellence and reliability, the brand continues to serve the community with premium goods and exceptional service across generations.",
@@ -127,22 +127,22 @@ export const experiences = [
   },
   {
     id: 5,
-    img: "https://siyajhvxxsqcucrzfykf.supabase.co/storage/v1/object/public/Image-Logo/7.jpg",
-    role: "Karchi & Chow's",
+    img: "https://siyajhvxxsqcucrzfykf.supabase.co/storage/v1/object/public/Image-Logo/thinksphere.png",
+    role: "Thinksphere consulting",
     company: "Agra ",
     
     desc: "Karchi & Chow's is Agra’s popular multi-cuisine eatery offering a delicious blend of Indian, Chinese, and fast-food favourites. With a focus on hygiene, flavour, and freshness, the restaurant has become a go-to spot for families, students, and food lovers looking for quality meals at great value.",
     
   },
-  {
-    id: 6,
-    img: "https://siyajhvxxsqcucrzfykf.supabase.co/storage/v1/object/public/Image-Logo/3.jpg",
-    role: "Bxxy Shoes ",
-    company: "USA ",
+  // {
+  //   id: 6,
+  //   img: "https://siyajhvxxsqcucrzfykf.supabase.co/storage/v1/object/public/Image-Logo/3.jpg",
+  //   role: "Bxxy Shoes ",
+  //   company: "USA ",
     
-    desc: "Bxxy Shoes USA is a fashion-forward footwear brand known for stylish, comfortable, and durable shoes crafted for modern lifestyles. With a presence across global markets, Bxxy offers innovative designs, premium materials, and unmatched comfort—making it a preferred choice for customers seeking trend-driven, high-quality footwear.",
+  //   desc: "Bxxy Shoes USA is a fashion-forward footwear brand known for stylish, comfortable, and durable shoes crafted for modern lifestyles. With a presence across global markets, Bxxy offers innovative designs, premium materials, and unmatched comfort—making it a preferred choice for customers seeking trend-driven, high-quality footwear.",
     
-  },
+  // },
 ];
 // Team Data............
 export const education = [

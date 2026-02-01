@@ -67,6 +67,7 @@ function App() {
       </HashRouter>
     </ThemeProvider>
   );
+  
 }
 
 export default App;
